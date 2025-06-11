@@ -19,7 +19,7 @@ blue.style.backgroundColor = "blue";
 // 5. Set the styling of `lightGreen` to a background color of lightGreen.
 lightGreen.style.backgroundColor = "lightGreen"
 // 6. Set the styling of `row1` to have a font color of white.
-row1.style.fontColor = "white";
+row1.style.color = "white";
 
 
 // CHALLENGE #2 - style the image
@@ -29,7 +29,12 @@ let imageButton = document.querySelector(".image-button");
                                    
 // 7. Add an event listener to `imageButton`
 // - The event type should be "click" or "dblclick"
-
+imageButton.addEventListener("click", function(){
+    image.style.width = "300px";
+    image.style.borderStyle = "solid";
+    image.style.borderColor = "#42068c";
+    image.style.borderRadius = "5px";
+});
 // Include the next tasks in the body of the function.
 
 // 8. The image is wayyyy too big and needs a border.
